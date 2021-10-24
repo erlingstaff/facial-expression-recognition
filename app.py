@@ -1,7 +1,5 @@
 import cv2
 from deepface import DeepFace
-import matplotlib.pyplot as plt
-import numpy as np
 
 face_cascade = cv2.CascadeClassifier("cascade.xml")
 cap = cv2.VideoCapture("video.mp4")

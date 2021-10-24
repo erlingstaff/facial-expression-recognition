@@ -1,4 +1,4 @@
-# facial-expresison-recognition
+# Facial Expression Recognition Example
 
 OpenCV & DeepFace facial recognition and emotion detection
 

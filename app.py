@@ -15,13 +15,8 @@ while(cap.isOpened()):
         if ret:
             
             prediction = DeepFace.analyze(frame, actions=["emotion"])
-
             gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-
             faces = face_cascade.detectMultiScale(gray, 1.1, 15)
-
-            #print(prediction)
-
             for (x, y, w, h) in faces:
                 cv2.rectangle(frame, (x, y), (x+w, y+h), (0, 255, 0), 2)
             font = cv2.FONT_HERSHEY_COMPLEX
